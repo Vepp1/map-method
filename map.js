@@ -57,3 +57,8 @@ const students = [
 
 const studentsWithIds = students.map(student => [student.name, student.id]);
 console.log(studentsWithIds)
+
+// Returning as object 
+
+const students2 = students.map(student => ({id: student.id, name: student.name}))
+console.log(students2)
